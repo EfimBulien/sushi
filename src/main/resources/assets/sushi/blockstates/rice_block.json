@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "sushi:block/rice_block"
+    }
+  }
+}

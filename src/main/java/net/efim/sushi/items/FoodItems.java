@@ -1,5 +1,7 @@
 package net.efim.sushi.items;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 
@@ -12,6 +14,7 @@ public class FoodItems extends Item {
             .nutrition(4)
             .saturationMod(0.3f)
             .alwaysEat()
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 1.0F) // Эффект силы на 30 секунд
             .build()
     );
 
@@ -19,14 +22,14 @@ public class FoodItems extends Item {
             .nutrition(2)
             .saturationMod(0.1f)
             .alwaysEat()
+            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 1, 1), 1.0F) // Мгновенное лечение
             .build()
     );
 
-    // Новые свойства еды
     public static final FoodProperties SOY_SAUCE_FOOD = ((new FoodProperties.Builder())
-            .nutrition(1)
-            .saturationMod(0.1f)
-            .alwaysEat()
+            .nutrition(0)
+            .saturationMod(0.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 0), 1.0F) // Замедление на 30 секунд
             .build()
     );
 
@@ -34,6 +37,7 @@ public class FoodItems extends Item {
             .nutrition(1)
             .saturationMod(0.1f)
             .alwaysEat()
+            .effect(() -> new MobEffectInstance(MobEffects.HARM, 1, 1), 1.0F) // Моментальный урон
             .build()
     );
 }

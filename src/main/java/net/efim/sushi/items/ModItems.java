@@ -1,7 +1,7 @@
 package net.efim.sushi.items;
 
-import net.efim.sushi.ModCreativeModeTab;
 import net.efim.sushi.Sushi;
+import net.efim.sushi.ModCreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,13 +24,14 @@ public class ModItems {
             .tab(ModCreativeModeTab.SUSHI_TAB)
     ));
 
-    public static final RegistryObject<Item> ROLL = ITEMS.register("roll", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> ROLL = ITEMS.register("roll", () -> new RollItem(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
             .food(FoodItems.ROLL_FOOD)
     ));
 
-    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce", () -> new SoySauceItem(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
+            .stacksTo(1) // как у зелья или флакона воды
             .food(FoodItems.SOY_SAUCE_FOOD)
     ));
 

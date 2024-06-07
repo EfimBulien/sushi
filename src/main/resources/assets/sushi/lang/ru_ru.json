@@ -2,5 +2,9 @@
   "itemGroup.sushiTab": "Суши",
   "item.sushi.roll": "Ролл",
   "item.sushi.bowl": "Миска риса",
-  "item.sushi.rice": "Рис"
+  "item.sushi.rice": "Рис",
+  "item.sushi.soy_sauce": "Соевый соус",
+  "item.sushi.wasabi": "Васаби",
+  "block.sushi.wasabi_block": "Блок васаби",
+  "block.sushi.rice_block": "Блок риса"
 }

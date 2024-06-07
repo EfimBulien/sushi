@@ -2,5 +2,9 @@
   "itemGroup.sushiTab": "Sushi Tab",
   "item.sushi.roll": "Sushi Roll",
   "item.sushi.bowl": "Bowl of Rice",
-  "item.sushi.rice": "Rice"
+  "item.sushi.rice": "Rice",
+  "item.sushi.soy_sauce": "Soy Sauce",
+  "item.sushi.wasabi": "Wasabi",
+  "block.sushi.wasabi_block": "Wasabi Block",
+  "block.sushi.rice_block": "Rice Block"
 }

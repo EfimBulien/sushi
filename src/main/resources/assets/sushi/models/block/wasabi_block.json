@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "sushi:block/sushi_plate"
+    "all": "sushi:block/wasabi_block"
   }
 }
