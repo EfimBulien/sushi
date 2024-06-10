@@ -30,12 +30,12 @@ public class SoySauceItem extends Item {
 
     @Override
     public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
-        return UseAnim.DRINK; // Анимация питья
+        return UseAnim.DRINK;
     }
 
     @Override
     public int getUseDuration(@NotNull ItemStack stack) {
-        return 32; // Время использования, как у зелья
+        return 32;
     }
 
     @Override
