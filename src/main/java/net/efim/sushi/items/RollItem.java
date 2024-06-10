@@ -20,7 +20,6 @@ public class RollItem extends Item {
             net.minecraft.world.entity.@NotNull LivingEntity entity
     ) {
         if (entity instanceof ServerPlayer player) {
-            // Удаление всех эффектов
             player.removeAllEffects();
         }
         return super.finishUsingItem(stack, level, entity);
@@ -28,6 +27,6 @@ public class RollItem extends Item {
 
     @Override
     public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
-        return UseAnim.EAT; // Анимация еды
+        return UseAnim.EAT;
     }
 }
