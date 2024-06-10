@@ -13,9 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlocks {
-
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Sushi.MOD_ID);
-
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Sushi.MOD_ID);
 
     public static void register(IEventBus eventBus) {
@@ -24,14 +22,27 @@ public class ModBlocks {
     }
 
     public static final RegistryObject<Block> WASABI_BLOCK = BLOCKS.register("wasabi_block", () ->
-                    new WasabiBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(1.0f)));
+            new WasabiBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(1.0f)));
 
     public static final RegistryObject<Block> RICE_BLOCK = BLOCKS.register("rice_block", () ->
-                    new RiceBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f)));
+            new RiceBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f)));
+
+    public static final RegistryObject<Block> SEAWEED_BLOCK = BLOCKS.register("seaweed_block", () ->
+            new SeaweedBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f)));
+
+    public static final RegistryObject<Block> GINGER_BLOCK = BLOCKS.register("ginger_block", () ->
+            new GingerBlock(BlockBehaviour.Properties.of(Material.PLANT).strength(0.5f)));
+
 
     public static final RegistryObject<Item> WASABI_BLOCK_ITEM = ITEMS.register("wasabi_block", () ->
-                    new BlockItem(WASABI_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
+            new BlockItem(WASABI_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
 
     public static final RegistryObject<Item> RICE_BLOCK_ITEM = ITEMS.register("rice_block", () ->
-                    new BlockItem(RICE_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
+            new BlockItem(RICE_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
+
+    public static final RegistryObject<Item> SEAWEED_BLOCK_ITEM = ITEMS.register("seaweed_block", () ->
+            new BlockItem(SEAWEED_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
+
+    public static final RegistryObject<Item> GINGER_BLOCK_ITEM = ITEMS.register("ginger_block", () ->
+            new BlockItem(GINGER_BLOCK.get(), new Item.Properties().tab(ModCreativeModeTab.SUSHI_TAB)));
 }

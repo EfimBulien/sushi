@@ -6,5 +6,7 @@
   "item.sushi.soy_sauce": "Soy Sauce",
   "item.sushi.wasabi": "Wasabi",
   "block.sushi.wasabi_block": "Wasabi Block",
-  "block.sushi.rice_block": "Rice Block"
+  "block.sushi.rice_block": "Rice Block",
+  "block.sushi.seaweed_block": "Seaweed Block",
+  "block.sushi.ginger_block": "Ginger Block"
 }

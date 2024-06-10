@@ -10,9 +10,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class WasabiBlock extends Block {
+public class SeaweedBlock extends Block {
 
-    public WasabiBlock(Properties properties) {
+    public SeaweedBlock(Properties properties) {
         super(properties);
     }
 
@@ -21,7 +21,8 @@ public class WasabiBlock extends Block {
         super.stepOn(level, pos, state, entity);
 
         if (entity instanceof LivingEntity) { ((LivingEntity) entity).addEffect(
-            new MobEffectInstance(MobEffects.HARM, 1, 0));
+                new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 0)
+            );
         }
     }
 }

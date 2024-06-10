@@ -6,5 +6,7 @@
   "item.sushi.soy_sauce": "Соевый соус",
   "item.sushi.wasabi": "Васаби",
   "block.sushi.wasabi_block": "Блок васаби",
-  "block.sushi.rice_block": "Блок риса"
+  "block.sushi.rice_block": "Блок риса",
+  "block.sushi.seaweed_block": "Блок морских водорослей",
+  "block.sushi.ginger_block": "Блок имбиря"
 }
