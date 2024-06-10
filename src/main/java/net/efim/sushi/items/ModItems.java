@@ -15,27 +15,33 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> BOWL = ITEMS.register("bowl", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> BOWL = ITEMS.register("bowl", () ->
+            new Item(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
             .food(FoodItems.BOWL_FOOD)
     ));
 
-    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> RICE = ITEMS.register("rice", () ->
+            new Item(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
     ));
 
-    public static final RegistryObject<Item> ROLL = ITEMS.register("roll", () -> new RollItem(new Item.Properties()
+    public static final RegistryObject<Item> ROLL = ITEMS.register("roll", () ->
+            new RollItem(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
             .food(FoodItems.ROLL_FOOD)
     ));
 
-    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce", () -> new SoySauceItem(new Item.Properties()
+    public static final RegistryObject<Item> SOY_SAUCE = ITEMS.register("soy_sauce", () ->
+
+            new SoySauceItem(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
-            .stacksTo(1) // как у зелья или флакона воды
+            .stacksTo(1)
             .food(FoodItems.SOY_SAUCE_FOOD)
     ));
 
-    public static final RegistryObject<Item> WASABI = ITEMS.register("wasabi", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> WASABI = ITEMS.register("wasabi", () ->
+            new Item(new Item.Properties()
             .tab(ModCreativeModeTab.SUSHI_TAB)
             .food(FoodItems.WASABI_FOOD)
     ));
